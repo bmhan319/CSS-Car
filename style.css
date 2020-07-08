@@ -140,6 +140,10 @@ body {
   position: relative;
 }
 
+.wheel:hover {
+  transform: rotate(180deg)
+}
+
 .outer-rim {
   width: 60px;
   height: 60px;
