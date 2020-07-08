@@ -140,14 +140,59 @@ body {
   position: relative;
 }
 
-.rim {
+.outer-rim {
   width: 60px;
   height: 60px;
-  background-color: #ccc;
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  background-color: #ccc;
+}
+
+.rim {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background: 
+    linear-gradient(36deg, #ccc 42.34%, transparent 42.34%) 0 0,
+    linear-gradient(72deg, #000 75.48%, transparent 75.48%) 0 0,
+    linear-gradient(-36deg, #ccc 42.34%, transparent 42.34%) 100% 0,
+    linear-gradient(-72deg, #000 75.48%, transparent 75.48%) 100% 0, 
+    linear-gradient(36deg, transparent 57.66%, #000 57.66%) 100% 100%,
+    linear-gradient(72deg, transparent 24.52%, #ccc 24.52%) 100% 100%,
+    linear-gradient(-36deg, transparent 57.66%, #000 57.66%) 0 100%,
+    linear-gradient(-72deg, transparent 24.52%, #ccc 24.52%) 0 100%, 
+    #ccc linear-gradient(#000, #000) 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  transition: 1s
+}
+
+.rim-cap {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #ccc;
+}
+
+.inner-rim-cap {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #000;
 }
 
