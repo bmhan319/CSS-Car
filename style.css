@@ -13,29 +13,82 @@ body {
 .car-container {
   width: 400px;
   height: 400px;
-  border: 2px solid red;
   margin: 0 auto;
   margin-top: 36px;
 }
 
 .car-shell {
-  bordeR: 2px solid green;
 }
 
+
+/* Top-Car */
 .car-top {
-  width: 70px;
-  height: 60px;
-  border-radius: 0px 100px 10px 0;
-  background-color: orange;
+  width: 120px;
+  height: 140px;
   transform: scale(2, .75);
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
+.top-back {
+  background-color: #E8650C;
+  height: 80%;
+  width: 40%;
+  border-radius: 50px 10px 0px 100px;
+  transform: translate(-32px, 141px) skewY(-40deg);
+  overflow: hidden;
+}
+
+.top-mid {
+  background-color: #E8650C;
+  height: 80%;
+  width: 40%;
+  transform: translate(-20px, 122px)scaleX(1.8);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.top-front {
+  background-color: #E8650C;
+  height: 80%;
+  width: 40%;
+  border-radius: 50px 50px 100px 0px;
+  transform: translate(-20px, 130px) skewY(40deg);
+}
+
+.rear-window {
+  width: 30px;
+  height: 30px;
+  background-color: #888;
+  position: relative;
+  top: -12px;
+  left: -5px;
+  transform: rotate(60deg);
+}
+
+.back-window {
+  width: 50%;
+  height: 30%;
+  background-color: #888;
+  border-radius:  10px 3px 4px 0px;
+  transform: translate(3px, 10px) skewY(-0deg);
+  position: absolute;
+}
+
+.front-window {
+  width: 33%;
+  height: 24%;
+  background-color: #888;
+  border-radius:  3px 30px 4px 0px;
+  transform: translate(52px, 133px) skewY(-0deg);
+  position: absolute;
+  z-index: 100;
+}
 
 /* Mid-Car */
 .car-mid {
   width: 96%;
-  height: 70px;
+  height: 60px;
 }
 
 .car-body {
@@ -57,7 +110,7 @@ body {
   height: 100%;
   width: 110px;
   background-image: linear-gradient(#E8650C, #FFA500, #FFA500, #FFA500);
-  border-radius:  0px 100px 30px 0px ;
+  border-radius:  0px 40px 15px 0px ;
   position: relative;
   overflow: hidden;
   left: -10px;
