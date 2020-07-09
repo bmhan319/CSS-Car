@@ -109,7 +109,7 @@ body {
 .car-hood {
   height: 100%;
   width: 110px;
-  background-image: linear-gradient(#E8650C, #FFA500, #FFA500, #FFA500);
+  background-image: linear-gradient(#E8650C, #FFA500 30%);
   border-radius:  0px 40px 15px 0px ;
   position: relative;
   overflow: hidden;
@@ -139,7 +139,7 @@ body {
 }
 
 .car-door {
-  background-image: linear-gradient(#E8650C, #FFA500, #FFA500, #FFA500);
+  background-image: linear-gradient(#E8650C, #FFA500 30%);
   height: 100%;
   width: 25%;
 }
@@ -179,7 +179,7 @@ body {
 }
 
 .trunk-tophalf {
-  background-image: linear-gradient(#E8650C, #FFA500, #FFA500);
+  background-image: linear-gradient(#E8650C, #FFA500 60%);
   height: 50%;
   width: 94%;
   border-radius: 20px 0 0 0; 
