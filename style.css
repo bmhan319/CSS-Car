@@ -238,10 +238,10 @@ body {
 
 @keyframes brake{
   0% {background-color: darkred}
-  35% {background-color: darkred}
-  40% {background-color: red}
-  60% {background-color: red}
-  61% {background-color: darkred}
+  35% {background-color: darkred; box-shadow: 0px 0px 0px transparent;}
+  40% {background-color: red; box-shadow: 0px 0px 20px #fff;}
+  60% {background-color: red; box-shadow: 0px 0px 20px #fff;}
+  61% {background-color: darkred; box-shadow: 0px 0px 0px transparent;}
   100% {background-color: darkred}
 }
 
