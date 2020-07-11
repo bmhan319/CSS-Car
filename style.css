@@ -25,12 +25,14 @@ body {
   top: 50%;
   transform: translateY(-60%);
   left: -100%;
-  animation: example 4s linear 0s infinite;
+  animation: example 5s linear 0s infinite;
 
 }
 
 @keyframes example {
   0%   {left:-100%;}
+  40% {left: 30%;}
+  60% {left: 30%;}
   100%  {left:100%;}
 }
 
@@ -229,8 +231,18 @@ body {
 }
 
 .trunklight {
-  background-color: red;
+  background-color: darkred;
   position: relative;
+  animation: brake 5s linear infinite;
+}
+
+@keyframes brake{
+  0% {background-color: darkred}
+  35% {background-color: darkred}
+  40% {background-color: red}
+  60% {background-color: red}
+  61% {background-color: darkred}
+  100% {background-color: darkred}
 }
 
 .brakelight {
@@ -282,12 +294,15 @@ body {
   top: 5px;
   left: 2.5px;
   position: relative;
-  animation: spin 1s infinite linear;
+  animation: spin 5s infinite linear;
 }
 
 @keyframes spin {
   0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
+  40%{transform: rotate(720deg);}
+  40% {transform: rotate(720deg);}
+  60% {transform: rotate(720deg);}
+  100% {transform: rotate(1440deg);}
 }
 
 .outer-rim {
